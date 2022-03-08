@@ -104,7 +104,7 @@ model.fit(x=X_train, y=y_train,
 model_loss = pd.DataFrame(model.history.history)
 model_loss.plot() #Better
 
-#Creating model #3 (With Dropout layers)
+#Creating model #3 (With Dropout layers which also prevents overfitting)
 from tensorflow.keras.layers import Dropout
 
 model = Sequential()
